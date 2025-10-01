@@ -21,7 +21,11 @@ public class Main2 {
         double totalCost = laptop.getPrice() + headphones.getPrice();
         System.out.println(totalCost);
 
-        // Print item count
-        System.out.println();
+        // Create an order for laptop
+        Order orderForLaptop = new Order(alice, laptop);
+
+        // Confirm order
+        String orderConfirmation = orderForLaptop.confirmOrder();
+        System.out.println(orderConfirmation);
     }
 }
