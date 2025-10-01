@@ -1,7 +1,6 @@
 package day3;
 
 public class Teacher {
-    public class Teacher {
         // Private instance variables
         private String name;
         private String subject;
@@ -22,6 +21,5 @@ public class Teacher {
     // Public method to simulate teaching a course
     public void teachCourse() {
         // logic to simulate teaching can go here
-    }
     }
 }

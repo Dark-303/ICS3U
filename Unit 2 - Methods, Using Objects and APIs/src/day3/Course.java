@@ -1,7 +1,6 @@
 package day3;
 
 public class Course {
-    public class Course {
     // Private instance variables
     private String courseName;
     private Teacher teacher;
@@ -40,6 +39,4 @@ public class Course {
             }
         }
     }
-}
-
 }

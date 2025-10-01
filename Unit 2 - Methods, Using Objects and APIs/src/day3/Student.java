@@ -1,7 +1,6 @@
 package day3;
 
 public class Student {
-    public class Student {
     // Private instance variables
     private String name;
     private int grade;
@@ -28,6 +27,4 @@ public class Student {
     public boolean graduate() {
         return false;
     }
-}
-
 }
