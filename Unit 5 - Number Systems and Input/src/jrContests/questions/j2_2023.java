@@ -1,4 +1,4 @@
-package FileInput;
+package jrContests.questions;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class j2_2023 {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner in = new Scanner(new File("j2_2023.in"));
+        Scanner in = new Scanner(new File("src/jrContests/inputs/j2_2023.in"));
 
         int N = in.nextInt();
         int SHU = 0;
