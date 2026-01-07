@@ -23,7 +23,7 @@ public class Game {
         System.out.println("die score: " + dieScore + " || dies score: " + diesScore + " || ties: " + ties);
 
         ILoveClasses math = new ILoveClasses();
-        System.out.println(math.calculateUnknownNExponent(0.55, 0.5, 0, 10));
+        System.out.println(math.calculateUnknownNExponent(0.657, 128405, 0, 10)); // lol i think I broke it
 
         Car car = new Car("?", "?", 0, 0);
         car.drive(1);

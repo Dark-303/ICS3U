@@ -17,13 +17,16 @@ public class Scoreboard {
     }
 
     public String toString() {
-        return team1Score + " - " + team2Score + " - " + (team1Active ? team1:team2);
+        return team1Score + " - " + team2Score + " - " + (team1Active ? team1 : team2);
     }
 
     public void recordPlay(int points) {
-        if (team1Active && points != 0) team1Score++;
-        else team2Score++;
-        if (points == 0) team1Active = !team1Active;
+        if (team1Active && points != 0)
+            team1Score++;
+        else
+            team2Score++;
+        if (points == 0)
+            team1Active = !team1Active;
     }
 
     public void getScore() {
