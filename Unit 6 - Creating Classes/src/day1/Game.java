@@ -1,5 +1,7 @@
 package day1;
 
+import day2.Car;
+
 public class Game {
     public static void main(String[] args) {
         Die die1 = new Die(11);
@@ -19,5 +21,12 @@ public class Game {
             else diesScore++;
         }
         System.out.println("die score: " + dieScore + " || dies score: " + diesScore + " || ties: " + ties);
+
+        ILoveClasses math = new ILoveClasses();
+        System.out.println(math.calculateUnknownNExponent(0.55, 0.5, 0, 10));
+
+        Car car = new Car("?", "?", 0, 0);
+        car.drive(1);
+        car.displayCarDetails();
     }
 }

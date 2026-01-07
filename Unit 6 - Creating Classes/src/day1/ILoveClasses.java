@@ -31,6 +31,32 @@ public class ILoveClasses {
         changeTimes();
     }
 
+    public double calculateUnknownNExponent(double known, double base, double min, double max) {
+        double precision = Math.pow(10, -20);
+        boolean lessThan1 = base < 1;
+        double mid = 0;
+        while (max - min > precision) {
+            mid = (min + max) / 2.0;
+            double result = Math.pow(base, mid);
+            if (Math.abs(result - known) < precision) {
+                    break;
+            } else if (lessThan1) {
+                if (result > known) {
+                    min = mid;
+                } else {
+                    max = mid;
+                }
+            } else {
+                if (result < known) {
+                    min = mid;
+                } else {
+                    max = mid;
+                }
+            }
+        }
+        return mid;
+    }
+
     public void simulatePrints(int numTimes) {
         System.out.println("You printed I Love Classes " + numTimes);
         addTimes(numTimes);
