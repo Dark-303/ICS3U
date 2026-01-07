@@ -1,10 +1,10 @@
 package day2;
 
 public class Book {
-    String title;
-    String author;
-    int yearPublished;
-    double price;
+    private String title;
+    private String author;
+    private int yearPublished;
+    private double price;
 
     public Book(String title, String author, int yearPublished, double price) {
         this.title = title;
